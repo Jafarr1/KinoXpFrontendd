@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Add Screening</title>
+</head>
+<body>
+<h1>Add Screening</h1>
+<div class="form-container">
+    <form id="screeningForm">
+        <label for="movieTitle">Movie Title:</label>
+        <input type="text" id="movieTitle" required>
+
+        <label for="dateTime">Date and Time:</label>
+        <input type="datetime-local" id="dateTime" required>
+
+        <label for="theaterId">Theater ID:</label>
+        <input type="number" id="theaterId" required>
+
+        <label for="ageLimit">Age Limit:</label>
+        <input type="number" id="ageLimit" required>
+
+        <button type="button" id="addScreeningButton">Add Screening</button>
+    </form>
+</div>
+
+<h2>Current Screenings</h2>
+<div class="screening-list">
+    <ul id="screeningList"></ul>
+</div>
+
+<div id="response" style="margin-top: 20px;"></div>
+
+
+<script src="js/screenings.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cinema Reservation System</h1>
+
+    <!-- Reservation Form -->
+    <div class="reservation-form">
+        <h2>Create a Reservation</h2>
+        <input type="number" id="customer-id" placeholder="Enter Customer ID" required>
+        <input type="number" id="screening-id" placeholder="Enter Screening ID" required>
+        <button id="create-reservation-btn">Create Reservation</button>
+    </div>
+
+    <!-- Section to display the list of reservations -->
+    <h2>Reservation List</h2>
+    <div id="reservation-list" class="reservation-list"></div>
+</div>
+
+<script src="js/reservation.js"></script>
+</body>
+</html>
